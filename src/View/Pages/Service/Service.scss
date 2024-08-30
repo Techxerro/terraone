@@ -1,0 +1,99 @@
+.services-list{
+    padding:100px 0;
+    .container{
+        max-width:90%;
+        .title{
+            padding:0 80px;
+            margin-bottom: 50px;
+            h2{font-size:40px;}
+        }
+        .service-items{
+            padding:20px;
+            border:1px solid #d4d4d4;
+            border-radius: 10px;
+            height:100%;
+            svg{
+                path{
+                    fill:#174689;
+                }
+                margin-bottom: 20px;
+            }
+            .svgds-1{
+                path{
+                    fill:transparent!important;
+                    stroke: #174689;
+                }
+            }
+            h4{
+                color:#174689;
+                font-size: 24px;
+                font-weight: 800;
+                width:50%;
+            }
+            p{font-size: 16px;}
+            &:hover{
+                transition: 0.2s linear;
+                background: #ADCC49;
+                color:#fff;
+                svg{path{fill:#fff;}}
+                .svgds-1{
+                    path{
+                        fill:transparent!important;
+                        stroke: #fff;
+                    }
+                }
+                h4{color:#fff;}                
+            }
+        }
+    }
+}
+
+.workflow-wrapper{
+    padding:0 50px 100px 50px;
+    .workflow{
+        background: #ADCC49!important;
+        border-radius: 50px;
+        color:#fff!important;
+        .title{
+            hr{
+                background: #fff;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1140px){
+    .services-list{
+        .container{
+            .title{
+                padding:0;
+            }
+        }
+    }
+}
+@media (min-width:320px) and (max-width:768px){
+    .services-list{
+        padding:60px 0;
+        .container{
+            .title{
+                padding:0;
+                margin-bottom: 25px;
+                h2{
+                    font-size:30px;
+                    padding:0!important
+                }
+            }
+        }
+    }
+    .workflow-wrapper{
+        padding:0 25px 50px 25px;
+        .workflow{
+            padding:50px 0;
+            .title{
+                hr{
+                    background: #fff;
+                }
+            }
+        }
+    }
+}

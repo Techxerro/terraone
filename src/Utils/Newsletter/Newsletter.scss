@@ -1,0 +1,28 @@
+.newsletter{
+    border:1px solid #C8C8C8;
+    padding:20px 15px;
+    margin-bottom: 50px;
+    text-align: center;    
+    h2{
+        font-size: 35px;
+    }
+    span{
+        font-size: 15px;
+    }        
+    form{
+        input{
+            width:100%;
+            padding:10px;
+            margin:10px 0 ;
+            border:1px solid #C8C8C8;
+        }
+        input[type="submit"]{
+            border:none;
+            background:#adcc49;
+            color:#fff;
+            &:hover{
+                background: #174689;
+            }
+        }
+    }
+}

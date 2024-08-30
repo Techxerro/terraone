@@ -1,0 +1,315 @@
+.about-intro{
+    padding:100px 0;
+    .container{
+        max-width:90%;
+    }
+    .intro-title{
+        background: #174689;
+        padding:60px;
+        width:30dvw;
+        position: relative;
+        color:#fff;
+        margin-bottom:100px;
+        .title{
+            h5{
+                font-family: 'Source Sans 3', sans-serif!important;
+            }
+            hr{
+                margin:0;
+                background: #fff;
+            }
+            h2{
+                padding:0;
+            }
+        }
+        #welcomeimg{
+            position: absolute;
+            right:-50px;
+        }
+    }
+    .intro-content{
+        h3{
+            font-size:32px;
+            font-weight:bold;
+        }
+        p{
+            font-size:20px;
+        }
+    }
+}
+
+.about-slider{ 
+    color:#fff;
+    position: relative;
+    overflow: hidden;
+    .about-slider-inner{
+        margin-top: 100px;
+        background: #174689;
+    }
+    .container{
+        max-width:90%;
+        .swiper{
+            overflow: visible;
+        }
+        .slideitem{
+            padding:100px 0;
+            width:100%;
+            h3{
+                font-size: 40px;
+                font-weight: bold;
+            }
+            p{
+                font-size:17px;
+            }
+            img{
+                width: 100%;
+            }
+            #missionimg1{
+                position: absolute;
+                bottom:0;
+                width:90%;
+            }           
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom:30%;
+            left:50%;
+            transform: translate(-50%,-30%);
+            width:200px;
+            color:transparent;
+            &::after{
+                content:'-';
+                width:25px;
+                height:1px;
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+                background: #fff;
+            }
+            span{
+                color:#fff;
+                padding:0 20px; 
+            }
+        }
+        .custom-nav {
+            position: absolute;
+            bottom: 30%;
+            left: 25%;
+            transform: translate(-25%, -30%);
+            z-index: 9999;
+            svg{
+                path{
+                    fill:#fff!important;
+                }
+                &:hover{
+                    scale:1.1;
+                    path{fill:#ADCC49!important;}
+                }
+            }
+        }
+    }
+}
+
+.founder{
+    background: #ADCC49;
+    padding:140px 0 100px;
+    color:#fff;
+    border-radius:55rem 55rem 0 0;
+    .title{
+        hr{
+            background: #fff;
+        }
+        h2{
+            padding:0!important;
+            font-size:45px;
+        }
+    }
+    img{
+        padding-bottom: 20px;
+    }
+}
+
+
+// Small Screens 
+@media (min-width:1024px) and (max-width:1280px){
+    .about-intro{
+        padding:80px 0 50px;
+        .intro-title{
+            padding:40px;
+            .title{
+                hr{
+                    margin:10px 0;
+                }
+                h2{
+                    font-size: 40px;
+                }
+            } 
+        }
+    }
+    .about-slider{
+        .container{
+            .slideitem{
+                padding:80px 0;                
+                #missionimg1{
+                    width:100%;
+                }           
+            }
+            .swiper-pagination {
+                bottom:20%;
+                transform: translate(-50%,-20%);
+            }
+            .custom-nav {
+                bottom: 20%;
+                transform: translate(-25%, -20%);                
+            }
+        }
+    }        
+    .workflow{
+        padding:80px 0;
+    } 
+    .founder{
+        padding:80px 0 40px;
+    }
+}
+
+// table landscape mode
+@media (min-width:768px) and (max-width:1024px){
+    .about-intro{
+        padding:50px 0;
+        .intro-title{
+            padding:50px;
+            width:90%;            
+        }
+    }
+    .about-slider{ 
+        .about-slider-inner{
+            margin-top: 50px;
+        }
+        .container{
+            .slideitem{
+                padding:50px 0;   
+                #missionimg1{
+                    width:100%;
+                }       
+            }
+            .swiper-pagination {
+                bottom:20%;
+                transform: translate(-50%,-20%);
+            }
+            .custom-nav {
+                bottom: 20%;
+                transform: translate(-25%, -20%);                
+            }
+        }
+    }
+    .founder{
+        padding:80px 0 40px;
+    }    
+}
+
+// Tabel and Mobile landscape
+@media (min-width:576px) and (max-width:765px){
+    .about-intro{
+        padding:50px 0;
+        .intro-title{
+            padding:50px;
+            width:90%;            
+        }
+    }
+    .about-slider{ 
+        .about-slider-inner{
+            margin-top: 0;
+        }
+        .container{  
+            .slideitem{
+                padding:50px 0 100px;
+                width:100%;
+                img{
+                    display: none;
+                }
+                #missionimg1{
+                    position: relative;
+                    width:80%;
+                    height:60dvh;
+                    object-fit: cover;
+                    display: block;
+                }           
+            }
+            .swiper-pagination {
+                bottom:0%;
+                left:50%;
+                width:100%;
+            }
+            .custom-nav {
+                bottom: 5%;
+                left: 50%!important;
+                transform: translate(-50%, -10%);
+                width: 100%;
+                text-align: center;                
+            }
+        }
+    } 
+    .founder{
+        padding:50px 0 30px;
+    } 
+}
+@media (min-width:320px) and (max-width:575px){
+    .about-intro{
+        padding:50px 0;
+        .container{
+            max-width:90%;
+        }
+        .intro-title{
+            padding:40px 20px;
+            width:90%;
+            .title{
+                hr{
+                    margin:10px 0;
+                }
+            }
+            #welcomeimg{
+                right:-40px;
+            }
+        }
+    }
+    .about-slider{ 
+        .about-slider-inner{
+            margin-top: 0;
+        }
+        .container{  
+            .slideitem{
+                h3{
+                    font-size:35px;
+                }
+                padding:50px 0 100px;
+                width:100%;
+                img{
+                    display: none;
+                }
+                #missionimg1{
+                    position: relative;
+                    width:100%;
+                    height:50dvh;
+                    object-fit: cover;
+                    display: block;
+                }           
+            }
+            .swiper-pagination {
+                bottom:0%;
+                left:50%;
+                width:100%;
+            }
+            .custom-nav {
+                bottom: 5%;
+                left: 50%!important;
+                transform: translate(-50%, -10%);
+                width: 100%;
+                text-align: center;                
+            }
+        }
+    }    
+    .founder{
+        padding:50px 0 50px;
+    } 
+}

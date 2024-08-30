@@ -1,0 +1,144 @@
+.portfolio-section{
+    background: #F7F8F9;
+    padding:100px 0;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    .title{
+        hr{
+            width:220px;
+            background: #000;
+        }
+    }
+    .testimonials{
+        padding:50px 0;
+    }
+    
+    .swiper-slide-active{
+        width:800px!important;
+        max-width:800px!important;
+        transition: all linear;
+        opacity: 1!important;
+    }    
+    .swiper-slide{
+        opacity: 0.3;
+    }
+    .slideritem{
+        width:800px;
+        .slideritem-inner{
+            display: flex;
+            gap:40px;
+            .clients-testimony{
+                padding:10px 0;
+            }
+            .review{
+                display: inline;                
+                padding:8px 30px;
+                font-size:20px;
+                background: #ADCC49;
+                color:#fff;
+                border-radius: 50px;
+                margin-bottom:50px;
+            }
+            p{
+                font-size:20px;
+                padding:30px 0;
+            }
+            .client-job,.client-company{
+                font-size:15px;
+                display: block;
+            }
+            .client-company{
+                font-weight: bold;
+            }
+        }
+    }
+    .swiper{
+        overflow: visible;
+    }
+    .custom-nav-1{
+        position: absolute;
+        bottom:-20%;
+        left:50%;
+        transform: translate(-50%,0%);
+        padding:5px 0;
+        button{
+            background: transparent;
+            border:none;
+            position: relative;
+            top:0;
+            &:hover{
+                top:-5px;
+                transition: top 300ms ease-in-out;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .slideritem{
+        width:100%;
+        padding:0 50px;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+    
+    .slideritem{
+        max-width:100%;
+        padding:0 50px;
+    }
+
+    .swiper-slide-active{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:300px) and (max-width:575px) {
+    .portfolio-section{
+        padding:50px 0;
+        border-radius: 0;
+        .testimonials{
+            padding:20px 0;
+        }
+        .slideritem{
+            width:100vw!important;
+            text-align: center;
+            .client-img{ 
+                img{
+                    width:100px;
+                    height:100px;
+                    border-radius: 100px;
+                    object-fit: cover;
+                    margin-bottom:10px
+                }
+            }
+            .slideritem-inner{
+                display: block;
+                p{
+                    padding:10px 0;
+                    font-size:17px;
+                }
+                .clients-testimony{
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+        .custom-nav-1{
+            width:100%;
+            text-align: center;
+            bottom:-10%;
+            left:50%;
+            transform: translate(-50%,10%);
+        }
+    }
+    .slideritem{
+        width: 100%;
+        max-width:100%;
+        padding:0 20px;
+    }
+    .swiper-slide-active{
+        width: 100%;
+    }
+}

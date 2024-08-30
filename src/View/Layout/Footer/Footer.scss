@@ -1,0 +1,242 @@
+.contact-form-footer{
+    background: #174689;
+    padding:120px 0;
+    position: relative;
+    span{
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size:230px;
+        font-weight: bold;
+        color:#fff;
+        position: absolute;
+        left: 45%;
+        top:0;
+        transform: translate(-50%,0%);
+        opacity: 0.05;
+        text-transform: uppercase;
+    }
+    h3{
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size:40px;
+        font-weight: 600;
+        color:#fff;
+    }
+    form{
+        padding-top:50px;
+        label{
+            width:100%;
+            color:#fff;
+            font-family: 'Source Sans 3', sans-serif;
+            padding-bottom:20px;
+            padding: 5px;
+            input,textarea{
+                width:100%;
+                border:none;
+                border-bottom: 1px solid #ffffff50;
+                background: transparent;
+                color:#fff;
+                padding:10px 0;
+                font-weight: 400;
+                &::placeholder{
+                    color:#ffffff45;
+                    font-weight: 400;
+                }
+            }
+            input[type="submit"]{
+                float: right;
+                width:120px;
+                padding:15px 0;
+                border:1px solid #fff;
+                text-transform: uppercase;
+                &:hover{
+                    background: #FFF;
+                    color:#000;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background: #161616;
+    padding:100px 0 10px;
+    .container{
+        max-width:90%;
+    }
+    .about-company{
+        padding-right:30px;
+        h2{
+            font-family: 'Abhaya Libre', sans-serif;
+            font-size:55px;
+            color:#FFF;
+            padding-bottom:20px;
+        }
+        button{
+            background: #000;
+            color:#fff;
+            font-size:12.5px;
+            padding:18px 0;
+            width:225px;
+            border:2px solid #707070;
+            border-radius: 50px;
+            
+            &:hover{
+                background:#707070;
+            }
+        }
+        p{
+            color:#fff;
+            opacity: 40%;
+            padding:20px 0;
+            font-size:17px;
+        }
+    }
+    .footer-info{
+        display: grid;
+        grid-template-columns: auto;
+        span{
+            color:#ffffff70;
+            font-weight: 300;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size:16px;
+            margin-bottom:40px;
+            p{
+                color:#fff;
+                padding:10px 0;
+                a{
+                    color:#fff;
+                    &:hover{
+                        color:#ffffff90;
+                    }
+                }
+            }
+        }
+    }
+    .useful-link {
+        display: flex;
+        gap:80px;
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                padding:10px 0;
+                a{
+                    color:#fff;
+                    text-decoration: underline;
+                    font-weight: 400;
+                    &:hover{
+                        color:#ffffff90;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        border-top:1px solid #ffffff30;
+        padding:15px 0 15px;
+        .copyright-section{        
+            color:#fff;
+            opacity: 40%;
+            font-size:12px;
+            display: flex;
+            gap:25px;
+        }
+    }
+    .designer-link{
+        span{      
+            color:#ffffff40;
+            font-size:13px;
+            a{
+                color:#fff;
+                &:hover{
+                    color:#ffffff90;
+                }
+            }
+        }
+    }
+    .newsletter-wrapper{
+        .overlay{
+            content: '';
+            position: fixed;
+            width:100vw;
+            height:100vh;
+            top:0;
+            left:0;
+            background: rgb(0, 0, 0,0.4);
+            z-index:8;            
+        }
+        .newsletter{
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index:9;
+            background-color: #fff;
+            border-radius: 10px;
+            width:25vw;
+            padding:20px 25px;
+            form{
+                input{
+                    border-radius: 20px;
+                }                
+            }
+        }
+    }
+}
+
+
+@media (min-width:'769px') and (max-width:'1024px'){
+    .contact-form-footer{
+        padding:50px 0;
+        
+    } 
+}
+@media (min-width:'481px') and (max-width:'768px'){
+    .contact-form-footer{
+        span{
+            font-size:120px;
+            left:35%;
+        }
+    }
+    footer{
+        padding:50px 0 10px;
+        .footer-info{
+            span{
+                margin-bottom: 0;
+            }
+        }
+    } 
+}
+
+@media (min-width:'320px') and (max-width:'480px'){
+    .contact-form-footer{
+        padding:50px 0;
+        span{
+            font-size:70px;
+            left:50%;
+        }
+        form{
+            padding-top: 25px;
+        }
+        .d-flex{
+            display: block!important;
+        }
+    }
+    footer{
+        padding:50px 0 10px;
+        .about-company{
+            h2{
+                font-size:30px;
+                padding-bottom:10px;
+            }
+            button{
+                padding:12px 0;
+                width:180px;
+            }
+        }
+        .footer-info{
+            span{
+                margin-bottom: 0;
+            }
+        }
+    } 
+}

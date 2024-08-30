@@ -1,0 +1,111 @@
+.why-terraone{
+    position: relative;
+    .why-terraone-banner{
+        background: url('../../Assets/earth-covered-in-green-plants.jpg');
+        background-size:50%;
+        background-attachment: fixed;
+        .our-achivements{
+                position: absolute;
+                top:75%;
+                left:95%;
+                transform: translate(-50%,-65%);
+            div{
+                background: #174689;
+                color:#fff;
+                width:120px;
+                padding:20px 10px;
+                margin:20px 0;
+                h3{
+                font-size: 18px;
+                text-align: center;
+                }
+            }
+        }
+    }
+    .why-content{
+        padding:80px 40px;
+        span{
+            font-size:17px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        hr{
+            background: #174689;
+        }
+        h2{
+            font-family: 'Abhaya Libre', sans-serif;
+            font-size:40px;
+            font-weight: 700;
+        }
+        .d-grid{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:10px;
+            h3{                
+                font-family: 'Abhaya Libre', sans-serif;
+                font-size:28px;
+                font-weight: bold;
+            }
+            span{
+                display: block;
+                width:10px;
+                height:10px;
+                border-radius: 100%;
+                background: #174689;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width:300px) and (max-width:575px){
+    .why-terraone{
+        .why-terraone-banner{
+            background-size: cover;
+            background-attachment: scroll;
+            .our-achivements{
+                position: relative;
+                left:0%;
+                top:0%;
+                transform: translate(0,0);
+            }
+        }
+        .why-content{
+            padding:20px 30px;
+            h2{
+                font-size:26px;
+            }
+            .d-grid{
+                grid-template-columns: auto;
+                h3{                
+                    font-size:22px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .why-terraone{
+        .why-terraone-banner{
+            height:60dvh;
+            position: relative;
+            background-size: 100%;
+            background-position: center center;
+            .our-achivements{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                gap:25px;
+                div{
+                    width:200px;
+                    h3{
+                        font-size:30px;
+                    }
+                }
+            }
+        }        
+    }
+}
